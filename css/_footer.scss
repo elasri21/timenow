@@ -1,0 +1,43 @@
+footer {
+    @media #{$small} {
+        padding: 50px 50px;
+        .links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & > ul {
+                width: 60%;
+                flex-wrap: nowrap;
+            }
+        }
+
+    }
+    @media #{$mobile} {
+        .links {
+            & > ul {
+                flex-wrap: wrap;
+            }
+        }
+    }
+    padding: 30px 20px;
+    .links {
+        & > ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                font-weight: 600;
+                ul {
+                    li {
+                        a {
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: $text-color;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
